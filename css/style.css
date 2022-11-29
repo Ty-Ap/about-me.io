@@ -1,0 +1,14 @@
+h1 {
+  color:black;
+  background-color: fuchsia;
+  font-size: 3vw;
+}
+
+p {
+  color: black;
+  background-color: lightblue;
+}
+
+all {
+  text-align: center;
+}
