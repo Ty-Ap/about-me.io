@@ -9,6 +9,8 @@ function enterName() {
   return user;
 }
 
+
+function questions() {
 function q1() {
   let question1 =prompt('Are my eyes brown?').toLowerCase();
   if (question1 ==='yes' || question1 === 'y'){
@@ -81,4 +83,5 @@ function q6() {
       }
     }
   }
+}
 }
