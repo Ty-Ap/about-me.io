@@ -60,6 +60,7 @@ function q5() {
   //console.log ('answer 5 is yes');
   return question5;
 }
+}
 
 function q6() {
   let lives = 4;{
@@ -84,4 +85,6 @@ function q6() {
     }
   }
 }
-}
+
+
+questions();
