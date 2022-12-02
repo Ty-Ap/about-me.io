@@ -60,25 +60,37 @@ function q5() {
 }
 
 function q6() {
-  let lives = 4;{
-    let answer =prompt('now guess a number 1-10 you have 4 lives'); {
-      if (answer >= 6) {
-        answer =prompt(`nope! too high, guess again ${lives} left `);
-        lives--;
-        return lives;
-      }
+  for (let i=0; i < 4; i++ ){
+    let answer =prompt('now guess a number 1-10 you have 4 lives');
+    if (answer >= 6){
+      alert('nope! too high, guess again ');
+    } else if (answer <= 4){
+      alert('nope! too low');
+    } else if (answer === '5'){
+      alert('you got it right!');
+      break;
     }
-    {
-      if (answer <= 4) {
-        answer =prompt(`nope! too low ${lives} left`);
-        lives--;
-        return lives;
-      }
+    if (i === 3){
+      alert('youre out of lives, but the answer is 5');
     }
-    {
-      if (lives<1){
-        answer=prompt('youre out of lives, but the answer is 5');
+  }
+}
+
+function q7(){
+  let favGames = ['kingdom hearts','destiny','stardew valley', 'minecraft'];
+
+  let lives=6;
+
+  for(let x = 0; x < lives; x++){
+    let questionSevenGuess = prompt(`what is one of my favorite videogames? you have ${6-x} lives`).toLowerCase();
+    for(let y=0; y < favGames.length; y++){
+      if (questionSevenGuess === favGames[y]){
+        alert('correct. you must have good taste');
+        score++;
+        x = 6;
+        break;
       }
     }
   }
+  alert(`here are all my favorite games ${favGames} `);
 }
